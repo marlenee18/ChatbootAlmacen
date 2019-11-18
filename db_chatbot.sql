@@ -14,8 +14,6 @@ MySQL - 10.1.38-MariaDB : Database - db_chatbot
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`db_chatbot` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `db_chatbot`;
-
 /*Table structure for table `alm_producto` */
 
 DROP TABLE IF EXISTS `alm_producto`;
@@ -59,6 +57,7 @@ CREATE TABLE `alm_stock_producto` (
   `sucursal_id` int(11) DEFAULT NULL,
   `fecha` datetime DEFAULT NULL,
   `producto_id` int(11) DEFAULT NULL,
+  `ubicacion_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_stock`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -108,6 +107,22 @@ CREATE TABLE `sis_usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `sis_usuario` */
+
+/*Table structure for table `alm_ubicacion` */
+
+DROP TABLE IF EXISTS `alm_ubicacion`;
+
+CREATE TABLE `alm_ubicacion` (
+  `id_ubicacion` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre_ubicacion` varchar(100) NOT NULL,
+  `descripcion_ubicacion` varchar(100) NOT NULL,
+  `usuario_registro` int(11) NOT NULL,
+  `fecha_registro` datetime NOT NULL,
+  `estado` enum('A','I') NOT NULL,
+  PRIMARY KEY (`id_ubicacion`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `alm_ubicacion` */
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
