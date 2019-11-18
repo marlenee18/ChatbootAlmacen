@@ -17,4 +17,9 @@ public class DmiCity {
 	private String country_code;
 
 	private String country;
+
+	public char[] getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

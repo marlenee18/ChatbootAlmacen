@@ -11,4 +11,8 @@ public class Translation {
 	private String to;
 	private String text;
 	private String translationText;
+	public String getTranslationText() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
