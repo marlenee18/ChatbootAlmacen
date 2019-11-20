@@ -60,10 +60,10 @@ public class MainBot extends TelegramLongPollingBot{
                             "/Eliminar     ");
                     break;
 
-                case "/VerEspecialidades":
-                    sendMsg(message, "/MedicinaGeneral");
-                    sendMsg(message, "/Pediatria");
-                    sendMsg(message, "/Traumatologia");
+                case "/EditarUsuario":
+                    sendMsg(message, "/Nombre");
+                    sendMsg(message, "/Direccion");
+                    sendMsg(message, "/Telefono");
                 default:
             }
         }
