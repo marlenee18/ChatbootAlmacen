@@ -47,20 +47,20 @@ public class MainBot extends TelegramLongPollingBot{
       //  Message message = update.getMessage();
         if (message != null && message.hasText()) {
             switch (message.getText()) {
-                case "/inicio":
+                case "/usuario":
 
                     sendMsg(message, "hola soy el asistente automatico                 " +
                             "En que te puedo ayudar?"
                     );
                     break;
-                case "/RegistrarUsuario":
+                case "/producto":
                     sendMsg(message, "Porfavor seleccione una especialidad       " );
                     sendMsg(message,      "/MedicinaGeneral      " +
                             "/Pediatria         " +
                             "/Traumatologia     ");
                     break;
 
-                case "/EditarUsuario":
+                case "/ubicacion":
                     this.sendMsg(message, "/Nombre");
                     this.sendMsg(message, "/Direccion");
                     this.sendMsg(message, "/Telefono");
