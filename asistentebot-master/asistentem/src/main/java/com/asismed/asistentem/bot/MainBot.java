@@ -53,17 +53,17 @@ public class MainBot extends TelegramLongPollingBot{
                             "En que te puedo ayudar?"
                     );
                     break;
-                case "/ReservarCitaMedica":
+                case "/RegistrarUsuario":
                     sendMsg(message, "Porfavor seleccione una especialidad       " );
                     sendMsg(message,      "/MedicinaGeneral      " +
                             "/Pediatria         " +
                             "/Traumatologia     ");
                     break;
 
-                case "/VerEspecialidades":
-                    sendMsg(message, "/MedicinaGeneral");
-                    sendMsg(message, "/Pediatria");
-                    sendMsg(message, "/Traumatologia");
+                case "/EditarUsuario":
+                    this.sendMsg(message, "/Nombre");
+                    this.sendMsg(message, "/Direccion");
+                    this.sendMsg(message, "/Telefono");
                 default:
             }
         }
@@ -90,10 +90,10 @@ public class MainBot extends TelegramLongPollingBot{
 
 
     public String getBotUsername() {
-        return "AsisMedBot";
+        return "consultasStockBot";
     }
 
     public String getBotToken() {
-        return "965898434:AAFYisxZkAsAWykdChxs9DNy1ceCADAmogo";
+        return "1011845711:AAEafGHePrLSWGbC6-sKYO38vBpUi5o2SC4";
     }
 }
