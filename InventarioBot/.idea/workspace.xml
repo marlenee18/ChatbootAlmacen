@@ -28,11 +28,12 @@
   <component name="ProjectId" id="1TyQxi0Ofz0gXsopz9nEIXRXlTJ" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chatbot" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,6 +74,12 @@
       <workItem from="1574430106523" duration="110000" />
       <workItem from="1574430326617" duration="21129000" />
       <workItem from="1574455219326" duration="889000" />
+      <workItem from="1574476616376" duration="1350000" />
+      <workItem from="1574478103202" duration="2606000" />
+      <workItem from="1574517304731" duration="7820000" />
+      <workItem from="1574536839792" duration="8428000" />
+      <workItem from="1574545475619" duration="52000" />
+      <workItem from="1574579280492" duration="452000" />
     </task>
     <servers />
   </component>
